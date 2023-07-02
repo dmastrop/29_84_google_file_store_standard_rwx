@@ -4,6 +4,7 @@ metadata: #Dictionary
   name: myapp1-deployment
 spec: # Dictionary
   replicas: 2
+  #replicas: 10
   # note that because there are 2 replilcas we are exercising the read from multiple pods, thus the ReadWriteMany rwx 
   # of this filestore storage class.
   # request to any pod will serve the same content from GCP files store file system
