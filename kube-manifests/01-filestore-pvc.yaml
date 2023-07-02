@@ -4,6 +4,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: gke-filestore-pvc
+  # this name will be used in the  claimName: of the volume: in the write to filestore pod yaml
 spec:
   accessModes:
   - ReadWriteMany

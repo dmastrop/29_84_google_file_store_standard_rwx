@@ -6,6 +6,7 @@ spec:
   type: LoadBalancer # ClusterIp, # NodePort
   selector:
     app: myapp1
+    # this must match the matchLabels in the myapp1 deployment yaml
   ports: 
     - name: http
       port: 80 # Service Port
